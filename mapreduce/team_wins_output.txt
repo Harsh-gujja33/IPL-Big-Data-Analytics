@@ -1,0 +1,19 @@
+Chennai Super Kings	145
+Deccan Chargers	29
+Delhi Capitals	55
+Delhi Daredevils	67
+Gujarat Lions	13
+Gujarat Titans	42
+Kings XI Punjab	85
+Kochi Tuskers Kerala	6
+Kolkata Knight Riders	136
+Lucknow Super Giants	32
+Mumbai Indians	153
+Pune Warriors	12
+Punjab Kings	40
+Rajasthan Royals	120
+Rising Pune Supergiant	10
+Rising Pune Supergiants	5
+Royal Challengers Bangalore	114
+Royal Challengers Bengaluru	24
+Sunrisers Hyderabad	99

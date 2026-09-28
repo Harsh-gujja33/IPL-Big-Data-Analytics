@@ -1,0 +1,747 @@
+{
+  "overview": {
+    "total_matches": 1212,
+    "total_deliveries": 288226,
+    "total_seasons": 19,
+    "total_teams": 19,
+    "total_venues": 59,
+    "total_runs": 389928,
+    "seasons_list": [
+      "2007/08",
+      "2009",
+      "2009/10",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020/21",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ]
+  },
+  "team_stats": [
+    {
+      "team": "Mumbai Indians",
+      "played": 285,
+      "wins": 153,
+      "losses": 132,
+      "win_pct": 53.68,
+      "toss_wins": 156
+    },
+    {
+      "team": "Chennai Super Kings",
+      "played": 260,
+      "wins": 145,
+      "losses": 115,
+      "win_pct": 55.77,
+      "toss_wins": 130
+    },
+    {
+      "team": "Kolkata Knight Riders",
+      "played": 272,
+      "wins": 136,
+      "losses": 136,
+      "win_pct": 50.0,
+      "toss_wins": 132
+    },
+    {
+      "team": "Rajasthan Royals",
+      "played": 245,
+      "wins": 120,
+      "losses": 125,
+      "win_pct": 48.98,
+      "toss_wins": 134
+    },
+    {
+      "team": "Royal Challengers Bangalore",
+      "played": 240,
+      "wins": 114,
+      "losses": 126,
+      "win_pct": 47.5,
+      "toss_wins": 113
+    },
+    {
+      "team": "Sunrisers Hyderabad",
+      "played": 205,
+      "wins": 99,
+      "losses": 106,
+      "win_pct": 48.29,
+      "toss_wins": 96
+    },
+    {
+      "team": "Kings XI Punjab",
+      "played": 190,
+      "wins": 85,
+      "losses": 105,
+      "win_pct": 44.74,
+      "toss_wins": 85
+    },
+    {
+      "team": "Delhi Daredevils",
+      "played": 161,
+      "wins": 67,
+      "losses": 94,
+      "win_pct": 41.61,
+      "toss_wins": 80
+    },
+    {
+      "team": "Delhi Capitals",
+      "played": 115,
+      "wins": 55,
+      "losses": 60,
+      "win_pct": 47.83,
+      "toss_wins": 65
+    },
+    {
+      "team": "Gujarat Titans",
+      "played": 69,
+      "wins": 42,
+      "losses": 27,
+      "win_pct": 60.87,
+      "toss_wins": 33
+    },
+    {
+      "team": "Punjab Kings",
+      "played": 82,
+      "wins": 40,
+      "losses": 42,
+      "win_pct": 48.78,
+      "toss_wins": 41
+    },
+    {
+      "team": "Lucknow Super Giants",
+      "played": 66,
+      "wins": 32,
+      "losses": 34,
+      "win_pct": 48.48,
+      "toss_wins": 29
+    },
+    {
+      "team": "Deccan Chargers",
+      "played": 75,
+      "wins": 29,
+      "losses": 46,
+      "win_pct": 38.67,
+      "toss_wins": 43
+    },
+    {
+      "team": "Royal Challengers Bengaluru",
+      "played": 39,
+      "wins": 24,
+      "losses": 15,
+      "win_pct": 61.54,
+      "toss_wins": 19
+    },
+    {
+      "team": "Gujarat Lions",
+      "played": 30,
+      "wins": 13,
+      "losses": 17,
+      "win_pct": 43.33,
+      "toss_wins": 15
+    },
+    {
+      "team": "Pune Warriors",
+      "played": 46,
+      "wins": 12,
+      "losses": 34,
+      "win_pct": 26.09,
+      "toss_wins": 20
+    },
+    {
+      "team": "Rising Pune Supergiant",
+      "played": 16,
+      "wins": 10,
+      "losses": 6,
+      "win_pct": 62.5,
+      "toss_wins": 6
+    },
+    {
+      "team": "Kochi Tuskers Kerala",
+      "played": 14,
+      "wins": 6,
+      "losses": 8,
+      "win_pct": 42.86,
+      "toss_wins": 8
+    },
+    {
+      "team": "Rising Pune Supergiants",
+      "played": 14,
+      "wins": 5,
+      "losses": 9,
+      "win_pct": 35.71,
+      "toss_wins": 7
+    }
+  ],
+  "top_batsmen": [
+    {
+      "player": "V Kohli",
+      "runs": 9050,
+      "balls": 6734,
+      "strike_rate": 134.39,
+      "fours": 816,
+      "sixes": 307,
+      "highest_score": 113
+    },
+    {
+      "player": "RG Sharma",
+      "runs": 7185,
+      "balls": 5399,
+      "strike_rate": 133.08,
+      "fours": 653,
+      "sixes": 311,
+      "highest_score": 109
+    },
+    {
+      "player": "S Dhawan",
+      "runs": 6769,
+      "balls": 5304,
+      "strike_rate": 127.62,
+      "fours": 768,
+      "sixes": 153,
+      "highest_score": 106
+    },
+    {
+      "player": "DA Warner",
+      "runs": 6567,
+      "balls": 4680,
+      "strike_rate": 140.32,
+      "fours": 663,
+      "sixes": 236,
+      "highest_score": 126
+    },
+    {
+      "player": "KL Rahul",
+      "runs": 5668,
+      "balls": 4068,
+      "strike_rate": 139.33,
+      "fours": 495,
+      "sixes": 232,
+      "highest_score": 152
+    },
+    {
+      "player": "SK Raina",
+      "runs": 5536,
+      "balls": 4025,
+      "strike_rate": 137.54,
+      "fours": 506,
+      "sixes": 204,
+      "highest_score": 100
+    },
+    {
+      "player": "MS Dhoni",
+      "runs": 5439,
+      "balls": 3935,
+      "strike_rate": 138.22,
+      "fours": 375,
+      "sixes": 264,
+      "highest_score": 84
+    },
+    {
+      "player": "AM Rahane",
+      "runs": 5194,
+      "balls": 4141,
+      "strike_rate": 125.43,
+      "fours": 523,
+      "sixes": 133,
+      "highest_score": 105
+    },
+    {
+      "player": "AB de Villiers",
+      "runs": 5181,
+      "balls": 3400,
+      "strike_rate": 152.38,
+      "fours": 414,
+      "sixes": 253,
+      "highest_score": 133
+    },
+    {
+      "player": "SV Samson",
+      "runs": 5008,
+      "balls": 3545,
+      "strike_rate": 141.27,
+      "fours": 412,
+      "sixes": 234,
+      "highest_score": 119
+    },
+    {
+      "player": "CH Gayle",
+      "runs": 4997,
+      "balls": 3331,
+      "strike_rate": 150.02,
+      "fours": 408,
+      "sixes": 359,
+      "highest_score": 175
+    },
+    {
+      "player": "RV Uthappa",
+      "runs": 4954,
+      "balls": 3784,
+      "strike_rate": 130.92,
+      "fours": 481,
+      "sixes": 182,
+      "highest_score": 88
+    },
+    {
+      "player": "KD Karthik",
+      "runs": 4843,
+      "balls": 3570,
+      "strike_rate": 135.66,
+      "fours": 466,
+      "sixes": 161,
+      "highest_score": 97
+    },
+    {
+      "player": "F du Plessis",
+      "runs": 4773,
+      "balls": 3506,
+      "strike_rate": 136.14,
+      "fours": 440,
+      "sixes": 174,
+      "highest_score": 96
+    },
+    {
+      "player": "SA Yadav",
+      "runs": 4473,
+      "balls": 3004,
+      "strike_rate": 148.9,
+      "fours": 472,
+      "sixes": 172,
+      "highest_score": 103
+    },
+    {
+      "player": "JC Buttler",
+      "runs": 4430,
+      "balls": 2946,
+      "strike_rate": 150.37,
+      "fours": 441,
+      "sixes": 200,
+      "highest_score": 124
+    },
+    {
+      "player": "AT Rayudu",
+      "runs": 4348,
+      "balls": 3391,
+      "strike_rate": 128.22,
+      "fours": 359,
+      "sixes": 173,
+      "highest_score": 100
+    },
+    {
+      "player": "Shubman Gill",
+      "runs": 4239,
+      "balls": 3014,
+      "strike_rate": 140.64,
+      "fours": 406,
+      "sixes": 136,
+      "highest_score": 129
+    },
+    {
+      "player": "G Gambhir",
+      "runs": 4217,
+      "balls": 3394,
+      "strike_rate": 124.25,
+      "fours": 492,
+      "sixes": 59,
+      "highest_score": 93
+    },
+    {
+      "player": "SS Iyer",
+      "runs": 4044,
+      "balls": 2967,
+      "strike_rate": 136.3,
+      "fours": 333,
+      "sixes": 174,
+      "highest_score": 97
+    }
+  ],
+  "top_bowlers": [
+    {
+      "player": "YS Chahal",
+      "wickets": 228,
+      "runs": 5273,
+      "balls": 3941,
+      "overs": 656.8,
+      "economy": 8.03
+    },
+    {
+      "player": "B Kumar",
+      "wickets": 215,
+      "runs": 5676,
+      "balls": 4432,
+      "overs": 738.7,
+      "economy": 7.68
+    },
+    {
+      "player": "SP Narine",
+      "wickets": 201,
+      "runs": 5114,
+      "balls": 4516,
+      "overs": 752.7,
+      "economy": 6.79
+    },
+    {
+      "player": "PP Chawla",
+      "wickets": 192,
+      "runs": 5108,
+      "balls": 3850,
+      "overs": 641.7,
+      "economy": 7.96
+    },
+    {
+      "player": "JJ Bumrah",
+      "wickets": 188,
+      "runs": 4323,
+      "balls": 3539,
+      "overs": 589.8,
+      "economy": 7.33
+    },
+    {
+      "player": "R Ashwin",
+      "wickets": 187,
+      "runs": 5652,
+      "balls": 4710,
+      "overs": 785.0,
+      "economy": 7.2
+    },
+    {
+      "player": "DJ Bravo",
+      "wickets": 183,
+      "runs": 4360,
+      "balls": 3120,
+      "overs": 520.0,
+      "economy": 8.38
+    },
+    {
+      "player": "RA Jadeja",
+      "wickets": 177,
+      "runs": 5358,
+      "balls": 4188,
+      "overs": 698.0,
+      "economy": 7.68
+    },
+    {
+      "player": "A Mishra",
+      "wickets": 174,
+      "runs": 4145,
+      "balls": 3371,
+      "overs": 561.8,
+      "economy": 7.38
+    },
+    {
+      "player": "SL Malinga",
+      "wickets": 170,
+      "runs": 3371,
+      "balls": 2827,
+      "overs": 471.2,
+      "economy": 7.15
+    },
+    {
+      "player": "Rashid Khan",
+      "wickets": 168,
+      "runs": 4055,
+      "balls": 3400,
+      "overs": 566.7,
+      "economy": 7.16
+    },
+    {
+      "player": "HV Patel",
+      "wickets": 151,
+      "runs": 3673,
+      "balls": 2470,
+      "overs": 411.7,
+      "economy": 8.92
+    },
+    {
+      "player": "Sandeep Sharma",
+      "wickets": 151,
+      "runs": 4264,
+      "balls": 3145,
+      "overs": 524.2,
+      "economy": 8.13
+    },
+    {
+      "player": "Harbhajan Singh",
+      "wickets": 150,
+      "runs": 4030,
+      "balls": 3416,
+      "overs": 569.3,
+      "economy": 7.08
+    },
+    {
+      "player": "TA Boult",
+      "wickets": 145,
+      "runs": 3913,
+      "balls": 2765,
+      "overs": 460.8,
+      "economy": 8.49
+    },
+    {
+      "player": "UT Yadav",
+      "wickets": 144,
+      "runs": 4332,
+      "balls": 3056,
+      "overs": 509.3,
+      "economy": 8.51
+    },
+    {
+      "player": "Mohammed Shami",
+      "wickets": 140,
+      "runs": 4007,
+      "balls": 2800,
+      "overs": 466.7,
+      "economy": 8.59
+    },
+    {
+      "player": "AR Patel",
+      "wickets": 136,
+      "runs": 4316,
+      "balls": 3489,
+      "overs": 581.5,
+      "economy": 7.42
+    },
+    {
+      "player": "K Rabada",
+      "wickets": 136,
+      "runs": 3079,
+      "balls": 2121,
+      "overs": 353.5,
+      "economy": 8.71
+    },
+    {
+      "player": "MM Sharma",
+      "wickets": 134,
+      "runs": 3513,
+      "balls": 2403,
+      "overs": 400.5,
+      "economy": 8.77
+    }
+  ],
+  "toss_analysis": {
+    "toss_match_wins": 613,
+    "toss_match_win_pct": 50.58,
+    "decisions": {
+      "field": 800,
+      "bat": 412
+    }
+  },
+  "venue_stats": [
+    {
+      "venue": "Eden Gardens",
+      "matches": 77,
+      "avg_match_runs": 307.2
+    },
+    {
+      "venue": "Wankhede Stadium",
+      "matches": 73,
+      "avg_match_runs": 320.6
+    },
+    {
+      "venue": "M Chinnaswamy Stadium",
+      "matches": 65,
+      "avg_match_runs": 311.7
+    },
+    {
+      "venue": "Feroz Shah Kotla",
+      "matches": 60,
+      "avg_match_runs": 307.0
+    },
+    {
+      "venue": "Wankhede Stadium, Mumbai",
+      "matches": 57,
+      "avg_match_runs": 351.2
+    },
+    {
+      "venue": "Rajiv Gandhi International Stadium, Uppal",
+      "matches": 49,
+      "avg_match_runs": 303.8
+    },
+    {
+      "venue": "MA Chidambaram Stadium, Chepauk",
+      "matches": 48,
+      "avg_match_runs": 318.3
+    },
+    {
+      "venue": "Sawai Mansingh Stadium",
+      "matches": 47,
+      "avg_match_runs": 303.5
+    },
+    {
+      "venue": "Dubai International Cricket Stadium",
+      "matches": 46,
+      "avg_match_runs": 314.1
+    },
+    {
+      "venue": "MA Chidambaram Stadium, Chepauk, Chennai",
+      "matches": 38,
+      "avg_match_runs": 322.6
+    }
+  ],
+  "season_trends": [
+    {
+      "season": "2007/08",
+      "matches": 58,
+      "runs": 17937,
+      "wickets": 689,
+      "run_rate": 8.31
+    },
+    {
+      "season": "2009",
+      "matches": 57,
+      "runs": 16353,
+      "wickets": 698,
+      "run_rate": 7.49
+    },
+    {
+      "season": "2009/10",
+      "matches": 60,
+      "runs": 18883,
+      "wickets": 723,
+      "run_rate": 8.13
+    },
+    {
+      "season": "2011",
+      "matches": 73,
+      "runs": 21154,
+      "wickets": 813,
+      "run_rate": 7.73
+    },
+    {
+      "season": "2012",
+      "matches": 74,
+      "runs": 22453,
+      "wickets": 857,
+      "run_rate": 7.83
+    },
+    {
+      "season": "2013",
+      "matches": 76,
+      "runs": 22602,
+      "wickets": 911,
+      "run_rate": 7.69
+    },
+    {
+      "season": "2014",
+      "matches": 60,
+      "runs": 18931,
+      "wickets": 673,
+      "run_rate": 8.2
+    },
+    {
+      "season": "2015",
+      "matches": 59,
+      "runs": 18353,
+      "wickets": 690,
+      "run_rate": 8.37
+    },
+    {
+      "season": "2016",
+      "matches": 60,
+      "runs": 18862,
+      "wickets": 665,
+      "run_rate": 8.31
+    },
+    {
+      "season": "2017",
+      "matches": 59,
+      "runs": 18786,
+      "wickets": 710,
+      "run_rate": 8.41
+    },
+    {
+      "season": "2018",
+      "matches": 60,
+      "runs": 19901,
+      "wickets": 720,
+      "run_rate": 8.65
+    },
+    {
+      "season": "2019",
+      "matches": 60,
+      "runs": 19434,
+      "wickets": 685,
+      "run_rate": 8.42
+    },
+    {
+      "season": "2020/21",
+      "matches": 60,
+      "runs": 19416,
+      "wickets": 677,
+      "run_rate": 8.29
+    },
+    {
+      "season": "2021",
+      "matches": 60,
+      "runs": 18637,
+      "wickets": 716,
+      "run_rate": 8.05
+    },
+    {
+      "season": "2022",
+      "matches": 74,
+      "runs": 24395,
+      "wickets": 910,
+      "run_rate": 8.54
+    },
+    {
+      "season": "2023",
+      "matches": 74,
+      "runs": 25688,
+      "wickets": 912,
+      "run_rate": 8.99
+    },
+    {
+      "season": "2024",
+      "matches": 71,
+      "runs": 25971,
+      "wickets": 883,
+      "run_rate": 9.56
+    },
+    {
+      "season": "2025",
+      "matches": 74,
+      "runs": 26527,
+      "wickets": 869,
+      "run_rate": 9.64
+    },
+    {
+      "season": "2026",
+      "matches": 43,
+      "runs": 15645,
+      "wickets": 514,
+      "run_rate": 9.86
+    }
+  ],
+  "phase_analysis": {
+    "powerplay": {
+      "runs": 116712,
+      "wickets": 3506,
+      "deliveries": 90565,
+      "legal_balls": 87086,
+      "run_rate": 8.04
+    },
+    "middle": {
+      "runs": 169160,
+      "wickets": 5556,
+      "deliveries": 132173,
+      "legal_balls": 128191,
+      "run_rate": 7.92
+    },
+    "death": {
+      "runs": 104056,
+      "wickets": 5253,
+      "deliveries": 65488,
+      "legal_balls": 62205,
+      "run_rate": 10.04
+    }
+  }
+}

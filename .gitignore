@@ -1,0 +1,35 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# R packages / temporary files
+renv/library/
+*.Rproj
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Hadoop temporary/generated files
+tmp/
+temp/
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+SecurityAuth-gujja.audit 
+Dataset\raw\ 
+.cursorrules 

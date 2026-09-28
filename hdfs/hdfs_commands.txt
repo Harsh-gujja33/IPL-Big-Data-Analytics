@@ -1,0 +1,35 @@
+# IPL Cricket Data Analytics - HDFS Operations Command Document
+# Distributed File System Directory Setup & Operational Commands
+
+# 1. Create Directory Hierarchy in HDFS
+hdfs dfs -mkdir -p /ipl/raw
+hdfs dfs -mkdir -p /ipl/clean
+hdfs dfs -mkdir -p /ipl/processed
+hdfs dfs -mkdir -p /ipl/results
+
+# 2. Upload Preprocessed Clean IPL Datasets to HDFS
+hdfs dfs -put Dataset/ipl_matches_clean.csv /ipl/clean/
+hdfs dfs -put Dataset/ipl_ball_by_ball_clean.csv /ipl/clean/
+
+# 3. Verify Files in HDFS
+hdfs dfs -ls /ipl/clean/
+
+# 4. Inspect Sample Records in HDFS
+hdfs dfs -cat /ipl/clean/matches_clean.csv | head -n 10
+hdfs dfs -cat /ipl/clean/deliveries_clean.csv | head -n 10
+
+# 5. File System Maintenance Operations
+# Copy files within HDFS
+hdfs dfs -cp /ipl/clean/matches_clean.csv /ipl/raw/matches_backup.csv
+
+# View HDFS Storage Utilization
+hdfs dfs -du -h /ipl/
+
+# Move files to processed directory
+hdfs dfs -mv /ipl/raw/matches_backup.csv /ipl/processed/
+
+# Remove temporary files
+hdfs dfs -rm /ipl/processed/matches_backup.csv
+
+# Download results back to Local File System
+hdfs dfs -get /ipl/results/ /tmp/ipl_results_local/
