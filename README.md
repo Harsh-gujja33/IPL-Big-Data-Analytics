@@ -1,66 +1,131 @@
 # 🏏 IPL Cricket Data Analytics Using Big Data Technologies
 
-A Big Data Analytics project for analyzing Indian Premier League (IPL) cricket data using **Hadoop HDFS, MapReduce, Apache Hive, PySpark, and R Shiny**.
+<p align="center">
+  <strong>Big Data Analytics Course Project</strong>
+</p>
 
-The project processes IPL match-level and ball-by-ball data to extract meaningful insights about teams, players, batting, bowling, venues, match phases, and overall team performance.
+<p align="center">
+  An end-to-end IPL cricket analytics platform using Hadoop, MapReduce, Hive, PySpark, and R Shiny.
+</p>
 
 ---
 
 ## 📌 Project Overview
 
-The Indian Premier League generates a large amount of cricket data across multiple seasons. Analyzing this data manually becomes difficult as the volume and complexity of the data increase.
+The **IPL Cricket Data Analytics Using Big Data Technologies** project analyzes Indian Premier League (IPL) match-level and ball-by-ball cricket data using Big Data technologies.
 
-This project demonstrates how **Big Data technologies** can be used to store, process, analyze, and visualize IPL cricket data.
+The project demonstrates how cricket data can be:
 
-The complete workflow is:
+- Collected and preprocessed
+- Stored using Hadoop HDFS
+- Processed using MapReduce
+- Queried using Apache Hive
+- Analyzed using PySpark
+- Visualized through an interactive R Shiny dashboard
+
+The system provides insights into **team performance, player performance, batting, bowling, venues, match phases, and overall IPL statistics**.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+- Analyze IPL match-level and ball-by-ball data.
+- Demonstrate distributed storage using **Hadoop HDFS**.
+- Perform distributed processing using **MapReduce**.
+- Perform SQL-based analysis using **Apache Hive**.
+- Perform large-scale data processing using **PySpark**.
+- Build an interactive analytics dashboard using **R Shiny**.
+- Analyze team and player performance.
+- Analyze batting and bowling statistics.
+- Analyze venue-wise performance.
+- Analyze performance across different match phases.
+- Provide an interactive interface for exploring IPL data.
+
+---
+
+## 🏗️ System Architecture
 
 ```text
-Raw IPL Dataset
-       ↓
+                    ┌──────────────────────┐
+                    │     IPL Dataset      │
+                    │ Match + Ball-by-Ball │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Data Preprocessing    │
+                    │ Cleaning & Formatting │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      Hadoop HDFS     │
+                    │ Distributed Storage   │
+                    └──────────┬───────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼              ▼              ▼
+         ┌────────────┐ ┌────────────┐ ┌────────────┐
+         │ MapReduce  │ │    Hive    │ │  PySpark   │
+         │ Processing │ │ SQL Query  │ │ Analytics  │
+         └──────┬─────┘ └──────┬─────┘ └──────┬─────┘
+                │              │              │
+                └──────────────┼──────────────┘
+                               ▼
+                    ┌──────────────────────┐
+                    │ Processed Analytics  │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     R Shiny App      │
+                    │ Interactive Dashboard│
+                    └──────────────────────┘
+🔄 Data Processing Pipeline
+Raw IPL Data
+     │
+     ▼
 Data Preprocessing
-       ↓
+     │
+     ▼
+Clean IPL Dataset
+     │
+     ▼
 Hadoop HDFS
-       ↓
-MapReduce
-       ↓
-Hive
-       ↓
-PySpark
-       ↓
-R Shiny Dashboard
-       ↓
-Interactive IPL Analytics
-🎯 Objectives
-Analyze IPL match and ball-by-ball data.
-Demonstrate distributed data storage using Hadoop HDFS.
-Perform distributed processing using MapReduce.
-Perform SQL-based analysis using Apache Hive.
-Perform advanced data processing using PySpark.
-Create an interactive analytics dashboard using R Shiny.
-Analyze team and player performance.
-Analyze batting and bowling statistics.
-Analyze venue-wise and phase-wise performance.
-Provide an easy-to-use interface for exploring IPL data.
+     │
+     ├──────────────► MapReduce
+     │
+     ├──────────────► Hive
+     │
+     └──────────────► PySpark
+                      │
+                      ▼
+               Analytical Results
+                      │
+                      ▼
+                R Shiny Dashboard
 🛠️ Technologies Used
 Technology	Purpose
 Hadoop HDFS	Distributed storage of IPL datasets
-MapReduce	Distributed processing of data
+MapReduce	Distributed data processing
 Apache Hive	SQL-based querying and analysis
 PySpark	Large-scale data processing and analytics
 R	Data analysis and visualization
-R Shiny	Interactive web dashboard
+R Shiny	Interactive dashboard
 ggplot2	Data visualization
 dplyr	Data manipulation
 DT	Interactive data tables
 Python	MapReduce and PySpark processing
-Git/GitHub	Version control and project hosting
+Git & GitHub	Version control and project hosting
 📊 Dataset
 
-The project uses IPL cricket datasets containing:
+The project works with two major types of IPL data.
 
-1. Match-Level Data
+1. Match-Level Dataset
 
-Contains information about individual IPL matches, including:
+The match dataset contains information about individual IPL matches, including:
 
 Match ID
 Season
@@ -72,9 +137,9 @@ Match result
 Winner
 Player of the Match
 Other match-related information
-2. Ball-by-Ball Data
+2. Ball-by-Ball Dataset
 
-Contains delivery-level information from IPL matches, including:
+The ball-by-ball dataset contains delivery-level information, including:
 
 Match ID
 Batting team
@@ -86,86 +151,70 @@ Runs scored
 Extras
 Wickets
 Dismissal information
+Dataset Size
 
-The processed dataset used by the dashboard contains approximately:
+The processed dataset used by the project contains approximately:
 
-1,212 match records
-288,226 ball-by-ball delivery records
+Dataset	Records
+Match-Level Data	1,212
+Ball-by-Ball Data	288,226
 
-The raw dataset is excluded from this repository to keep the repository size manageable. The processed/clean dataset is included where applicable.
+The raw dataset is excluded from the repository to keep the repository size manageable. The processed/clean dataset is included.
 
-🏗️ Project Architecture
-                 IPL Dataset
-                     │
-                     ▼
-            Data Preprocessing
-                     │
-                     ▼
-              ┌─────────────┐
-              │   HDFS      │
-              │  Storage    │
-              └─────────────┘
-                     │
-          ┌──────────┼──────────┐
-          ▼          ▼          ▼
-      MapReduce     Hive      PySpark
-          │          │          │
-          └──────────┼──────────┘
-                     ▼
-                Processed Data
-                     │
-                     ▼
-                R Shiny App
-                     │
-                     ▼
-            Interactive Dashboard
-🔄 Data Processing Pipeline
-1. Data Collection
+🧹 Data Preprocessing
 
-IPL match and ball-by-ball datasets are collected from publicly available cricket datasets.
+Before analysis, the IPL datasets are cleaned and prepared for Big Data processing.
 
-2. Data Preprocessing
-
-The raw data is cleaned and prepared for analysis.
-
-Major preprocessing operations include:
+The preprocessing stage includes:
 
 Handling missing values
 Removing unnecessary columns
 Standardizing column names
 Formatting data types
 Cleaning team and player names
-Preparing match and delivery-level datasets
-3. HDFS Storage
+Preparing match-level data
+Preparing delivery-level data
 
-The processed datasets are stored in Hadoop Distributed File System (HDFS).
+The cleaned datasets are then used for subsequent Hadoop, Hive, MapReduce, PySpark, and visualization operations.
 
-HDFS provides distributed and fault-tolerant storage for large datasets.
+⚙️ Big Data Processing
+Hadoop HDFS
 
-4. MapReduce
+Hadoop Distributed File System (HDFS) is used as the distributed storage layer.
+
+It provides storage for the IPL datasets and demonstrates the distributed storage concept of the Hadoop ecosystem.
+
+MapReduce
 
 MapReduce is used to demonstrate distributed processing.
 
-The:
+Mapper
 
-Mapper processes input records.
-Reducer combines and aggregates intermediate results.
+The Mapper processes individual input records and produces intermediate key-value pairs.
 
-This can be used for operations such as counting matches, calculating team statistics, and aggregating cricket data.
+Reducer
 
-5. Hive Analysis
+The Reducer receives intermediate results and performs aggregation.
 
-Apache Hive provides a SQL-like interface for analyzing the IPL datasets.
+MapReduce can be used for operations such as:
 
-Example operations include:
+Counting matches
+Aggregating team statistics
+Calculating cricket-related statistics
+Processing large datasets
+Apache Hive
+
+Apache Hive provides a SQL-like interface for querying IPL data.
+
+Example query:
 
 SELECT winner, COUNT(*)
 FROM matches
 GROUP BY winner;
 
-Hive makes it easier to perform structured queries on large datasets.
+Hive makes structured analysis easier through SQL-style queries.
 
-6. PySpark Analysis
+PySpark
 
 PySpark is used for distributed data processing and analytics.
 
@@ -177,16 +226,13 @@ Aggregation
 Statistical analysis
 Team performance analysis
 Player performance analysis
-7. R Shiny Dashboard
+📈 Interactive R Shiny Dashboard
 
-The processed data is visualized through an interactive R Shiny dashboard.
+The processed IPL data is presented through an interactive R Shiny dashboard.
 
-Users can select teams and seasons and explore different aspects of IPL performance.
+The dashboard allows users to explore IPL statistics dynamically.
 
-📈 Dashboard Features
-
-The R Shiny dashboard contains multiple analytical sections.
-
+Dashboard Sections
 🏠 Dashboard
 
 Provides an overall view of the IPL dataset and major statistics.
@@ -226,7 +272,7 @@ Analyze IPL matches based on venues and grounds.
 
 ⏱️ Phase Analysis
 
-Analyze match performance across different phases such as:
+Analyze performance across different match phases:
 
 Powerplay
 Middle overs
@@ -237,7 +283,7 @@ Provides an interactive view of the underlying datasets.
 
 ℹ️ About
 
-Contains information about the project, technologies, methodology, and dataset.
+Provides information about the project, technologies, methodology, and dataset.
 
 📁 Project Structure
 IPL-Big-Data-Analytics/
@@ -279,13 +325,14 @@ IPL-Big-Data-Analytics/
 💻 Running the R Shiny Dashboard
 Prerequisites
 
-Install the following:
+Install:
 
 R
 RStudio (optional)
 Required R packages
+Install Required Packages
 
-Install the required packages:
+Run the following in R:
 
 install.packages("shiny")
 install.packages("ggplot2")
@@ -295,9 +342,9 @@ install.packages("tidyr")
 install.packages("scales")
 Start the Dashboard
 
-Open Command Prompt and navigate to the R Shiny directory:
+From the project root:
 
-cd "C:\Users\gujja\Desktop\BDA Course Project\R_Shiny"
+cd R_Shiny
 
 Run:
 
@@ -310,23 +357,22 @@ http://127.0.0.1:3838
 To stop the application:
 
 Ctrl + C
-🖥️ Hadoop Environment
+🖥️ Development Environment
 
 The project was developed and tested on Windows using:
 
-Hadoop
 Java JDK
+Hadoop
 HDFS
 MapReduce
 Hive
 PySpark
+Python
 R
-
-Hadoop is used to demonstrate distributed storage and processing concepts required for the Big Data Analytics project.
-
+R Shiny
 📚 Big Data Concepts Demonstrated
 
-This project demonstrates the following Big Data concepts:
+This project demonstrates several important Big Data concepts.
 
 Volume
 
@@ -334,15 +380,15 @@ IPL generates a large number of delivery-level records across multiple seasons.
 
 Variety
 
-The project contains both structured match-level and detailed ball-by-ball data.
+The project works with both match-level and detailed ball-by-ball data.
 
 Velocity
 
-The ball-by-ball dataset represents sequential events generated throughout matches.
+Ball-by-ball records represent sequential events generated throughout IPL matches.
 
 Distributed Storage
 
-HDFS is used for storing large datasets.
+HDFS is used for distributed dataset storage.
 
 Distributed Processing
 
@@ -350,11 +396,11 @@ MapReduce and PySpark are used for processing and analyzing the data.
 
 Data Warehousing
 
-Hive provides a SQL-based approach for querying the data.
+Hive provides a SQL-based approach for querying structured IPL data.
 
 Data Visualization
 
-R Shiny converts analytical results into an interactive dashboard.
+R Shiny presents analytical results through an interactive dashboard.
 
 🎓 Academic Learning Outcomes
 
@@ -363,7 +409,7 @@ Through this project, the following concepts were implemented practically:
 Hadoop ecosystem
 HDFS
 MapReduce
-Hive
+Apache Hive
 PySpark
 Data preprocessing
 Distributed data processing
@@ -374,14 +420,14 @@ Interactive dashboards
 Big Data architecture
 🚀 Future Enhancements
 
-Possible future improvements include:
+Possible future enhancements include:
 
-Adding real-time IPL data updates
-Adding predictive analytics
+Real-time IPL data updates
+Predictive analytics
 Player performance prediction
 Match outcome prediction
 Advanced machine learning models
-More interactive visualizations
+Additional interactive visualizations
 Automated dataset updates
 Cloud-based deployment
 Advanced statistical analysis
@@ -392,29 +438,28 @@ Harsh Gujja
 BE Computer Engineering
 Vidyavardhini's College of Engineering and Technology
 
-GitHub:
-https://github.com/Harsh-gujja33
+GitHub
 
-LinkedIn:
-https://www.linkedin.com/in/harsh-gujja-01bb45318/
+🔗 https://github.com/Harsh-gujja33
 
-📌 Project
+LinkedIn
 
+🔗 https://www.linkedin.com/in/harsh-gujja-01bb45318/
+
+📌 Project Information
+
+Project Title:
 IPL Cricket Data Analytics Using Big Data Technologies
 
-Academic Big Data Analytics Course Project
+Domain:
+Big Data Analytics
 
+Project Type:
+Academic Course Project
 
-### One small recommendation
+Primary Technologies:
+Hadoop • HDFS • MapReduce • Hive • PySpark • R Shiny
 
-Because your actual GitHub repository is now working, you can update the README directly from CMD later with:
+⭐ Acknowledgement
 
-```cmd
-cd "C:\Users\gujja\Desktop\BDA Course Project"
-notepad README.md
-
-Paste the content, save it, then:
-
-git add README.md
-git commit -m "Improve project README"
-git push
+This project was developed as part of the Big Data Analytics course to demonstrate the practical implementation of Big Data storage, processing, analysis, and visualization techniques using IPL cricket data.
